@@ -35,7 +35,7 @@ if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
 endif()
 
 # Include the nvtx-c directory to access the nvtx-c CMake target
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../c)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../c ${CMAKE_CURRENT_SOURCE_DIR}/build_c)
 
 ###################################################################################################
 # - nvtx target -----------------------------------------------------------------------------------
