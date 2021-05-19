@@ -48,8 +48,8 @@ target_compile_features(nvtx3-cpp INTERFACE cxx_std_11)
 target_link_libraries(nvtx3-cpp INTERFACE nvtx3-c)
 
 # Build options
-option(BUILD_TESTS "Configure CMake to build tests" ON)
-option(BUILD_BENCHMARKS "Configure CMake to build (google) benchmarks" ON)
+option(BUILD_TESTS "Configure CMake to build tests" OFF)
+option(BUILD_BENCHMARKS "Configure CMake to build (google) benchmarks" OFF)
 
 if(BUILD_TESTS)
     add_subdirectory(tests)
